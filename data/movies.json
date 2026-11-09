@@ -1,0 +1,623 @@
+[
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "gross": 2923706026,
+    "genre": "Sci-fi · Adventure",
+    "a": "#356d87",
+    "b": "#122b45",
+    "id": 1
+  },
+  {
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "gross": 2799439100,
+    "genre": "Action · Superhero",
+    "a": "#7c4f7d",
+    "b": "#17243f",
+    "id": 2
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "gross": 2334844844,
+    "genre": "Sci-fi · Adventure",
+    "a": "#287b91",
+    "b": "#0d3652",
+    "id": 3
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "gross": 2257844554,
+    "genre": "Romance · Drama",
+    "a": "#9b664a",
+    "b": "#1a2e45",
+    "id": 4
+  },
+  {
+    "title": "Star Wars: The Force Awakens",
+    "year": 2015,
+    "gross": 2068223624,
+    "genre": "Sci-fi · Adventure",
+    "a": "#b67b44",
+    "b": "#25273d",
+    "id": 5
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "gross": 2048359754,
+    "genre": "Action · Superhero",
+    "a": "#935a69",
+    "b": "#29203e",
+    "id": 6
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "gross": 1921847111,
+    "genre": "Action · Superhero",
+    "a": "#ac4b4a",
+    "b": "#202d55",
+    "id": 7
+  },
+  {
+    "title": "Inside Out 2",
+    "year": 2024,
+    "gross": 1698863816,
+    "genre": "Animation · Comedy",
+    "a": "#8d61ac",
+    "b": "#22264b",
+    "id": 8
+  },
+  {
+    "title": "Jurassic World",
+    "year": 2015,
+    "gross": 1671537444,
+    "genre": "Action · Adventure",
+    "a": "#6e8b5b",
+    "b": "#1c332c",
+    "id": 9
+  },
+  {
+    "title": "The Lion King",
+    "year": 2019,
+    "gross": 1656943394,
+    "genre": "Animation · Adventure",
+    "a": "#b88b4d",
+    "b": "#49311d",
+    "id": 10
+  },
+  {
+    "title": "The Avengers",
+    "year": 2012,
+    "gross": 1518815515,
+    "genre": "Action · Superhero",
+    "a": "#b95c56",
+    "b": "#28364c",
+    "id": 11
+  },
+  {
+    "title": "Furious 7",
+    "year": 2015,
+    "gross": 1515341399,
+    "genre": "Action · Thriller",
+    "a": "#727b89",
+    "b": "#292d3a",
+    "id": 12
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "gross": 1495696292,
+    "genre": "Action · Drama",
+    "a": "#c18a50",
+    "b": "#304357",
+    "id": 13
+  },
+  {
+    "title": "Frozen II",
+    "year": 2019,
+    "gross": 1453683476,
+    "genre": "Animation · Fantasy",
+    "a": "#659bc4",
+    "b": "#2d3e70",
+    "id": 14
+  },
+  {
+    "title": "Barbie",
+    "year": 2023,
+    "gross": 1445638421,
+    "genre": "Comedy · Fantasy",
+    "a": "#c9689f",
+    "b": "#673b68",
+    "id": 15
+  },
+  {
+    "title": "The Super Mario Bros. Movie",
+    "year": 2023,
+    "gross": 1362566989,
+    "genre": "Animation · Adventure",
+    "a": "#bf5350",
+    "b": "#32477b",
+    "id": 16
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "gross": 1349926083,
+    "genre": "Action · Superhero",
+    "a": "#7e628d",
+    "b": "#22213b",
+    "id": 17
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "year": 2011,
+    "gross": 1342359942,
+    "genre": "Fantasy · Adventure",
+    "a": "#6d7286",
+    "b": "#252a3a",
+    "id": 18
+  },
+  {
+    "title": "Star Wars: The Last Jedi",
+    "year": 2017,
+    "gross": 1332539889,
+    "genre": "Sci-fi · Adventure",
+    "a": "#b45458",
+    "b": "#2d2d42",
+    "id": 19
+  },
+  {
+    "title": "Jurassic World: Fallen Kingdom",
+    "year": 2018,
+    "gross": 1310466296,
+    "genre": "Action · Adventure",
+    "a": "#758a67",
+    "b": "#2a3731",
+    "id": 20
+  },
+  {
+    "title": "Frozen",
+    "year": 2013,
+    "gross": 1280802282,
+    "genre": "Animation · Fantasy",
+    "a": "#86b5d0",
+    "b": "#3a5587",
+    "id": 21
+  },
+  {
+    "title": "Beauty and the Beast",
+    "year": 2017,
+    "gross": 1266115964,
+    "genre": "Fantasy · Romance",
+    "a": "#ac825e",
+    "b": "#3e2846",
+    "id": 22
+  },
+  {
+    "title": "Incredibles 2",
+    "year": 2018,
+    "gross": 1243225667,
+    "genre": "Animation · Action",
+    "a": "#b85252",
+    "b": "#39304c",
+    "id": 23
+  },
+  {
+    "title": "The Fate of the Furious",
+    "year": 2017,
+    "gross": 1236005118,
+    "genre": "Action · Thriller",
+    "a": "#7a8791",
+    "b": "#27344b",
+    "id": 24
+  },
+  {
+    "title": "Iron Man 3",
+    "year": 2013,
+    "gross": 1214811252,
+    "genre": "Action · Superhero",
+    "a": "#bb5e42",
+    "b": "#3b2831",
+    "id": 25
+  },
+  {
+    "title": "Minions",
+    "year": 2015,
+    "gross": 1159457503,
+    "genre": "Animation · Comedy",
+    "a": "#c3a447",
+    "b": "#46597a",
+    "id": 26
+  },
+  {
+    "title": "Captain America: Civil War",
+    "year": 2016,
+    "gross": 1155046416,
+    "genre": "Action · Superhero",
+    "a": "#a45d5b",
+    "b": "#253853",
+    "id": 27
+  },
+  {
+    "title": "Aquaman",
+    "year": 2018,
+    "gross": 1152028393,
+    "genre": "Action · Fantasy",
+    "a": "#3e9a8f",
+    "b": "#173e59",
+    "id": 28
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "gross": 1146030912,
+    "genre": "Fantasy · Adventure",
+    "a": "#9b8054",
+    "b": "#29392e",
+    "id": 29
+  },
+  {
+    "title": "Spider-Man: Far From Home",
+    "year": 2019,
+    "gross": 1131927996,
+    "genre": "Action · Superhero",
+    "a": "#aa6154",
+    "b": "#2e4a69",
+    "id": 30
+  },
+  {
+    "title": "Captain Marvel",
+    "year": 2019,
+    "gross": 1131416446,
+    "genre": "Action · Superhero",
+    "a": "#b57a56",
+    "b": "#33496b",
+    "id": 31
+  },
+  {
+    "title": "Transformers: Dark of the Moon",
+    "year": 2011,
+    "gross": 1123794079,
+    "genre": "Action · Sci-fi",
+    "a": "#637c8e",
+    "b": "#26394b",
+    "id": 32
+  },
+  {
+    "title": "Skyfall",
+    "year": 2012,
+    "gross": 1108561013,
+    "genre": "Action · Thriller",
+    "a": "#8d7b69",
+    "b": "#29333b",
+    "id": 33
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "gross": 1081142612,
+    "genre": "Action · Drama",
+    "a": "#6c8295",
+    "b": "#1b2537",
+    "id": 34
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "gross": 1074458282,
+    "genre": "Crime · Drama",
+    "a": "#699476",
+    "b": "#2c3045",
+    "id": 35
+  },
+  {
+    "title": "Toy Story 4",
+    "year": 2019,
+    "gross": 1073841394,
+    "genre": "Animation · Adventure",
+    "a": "#b99c62",
+    "b": "#385e75",
+    "id": 36
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "gross": 1067316101,
+    "genre": "Animation · Adventure",
+    "a": "#9d7757",
+    "b": "#34546e",
+    "id": 37
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Man’s Chest",
+    "year": 2006,
+    "gross": 1066179725,
+    "genre": "Fantasy · Adventure",
+    "a": "#8d7354",
+    "b": "#26384c",
+    "id": 38
+  },
+  {
+    "title": "Rogue One: A Star Wars Story",
+    "year": 2016,
+    "gross": 1058698218,
+    "genre": "Sci-fi · Adventure",
+    "a": "#7b8867",
+    "b": "#283e47",
+    "id": 39
+  },
+  {
+    "title": "Aladdin",
+    "year": 2019,
+    "gross": 1054304000,
+    "genre": "Fantasy · Musical",
+    "a": "#8d6fa9",
+    "b": "#354876",
+    "id": 40
+  },
+  {
+    "title": "Despicable Me 3",
+    "year": 2017,
+    "gross": 1034800131,
+    "genre": "Animation · Comedy",
+    "a": "#c5a652",
+    "b": "#45588a",
+    "id": 41
+  },
+  {
+    "title": "Finding Dory",
+    "year": 2016,
+    "gross": 1029266989,
+    "genre": "Animation · Adventure",
+    "a": "#4995b2",
+    "b": "#1a3c75",
+    "id": 42
+  },
+  {
+    "title": "Zootopia",
+    "year": 2016,
+    "gross": 1025521689,
+    "genre": "Animation · Comedy",
+    "a": "#92a96b",
+    "b": "#3d5964",
+    "id": 43
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "gross": 1005973645,
+    "genre": "Action · Drama",
+    "a": "#788b9a",
+    "b": "#19273c",
+    "id": 44
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "gross": 975811333,
+    "genre": "Drama · Biography",
+    "a": "#bc7a4b",
+    "b": "#302d32",
+    "id": 45
+  },
+  {
+    "title": "Harry Potter and the Sorcerer’s Stone",
+    "year": 2001,
+    "gross": 974755371,
+    "genre": "Fantasy · Adventure",
+    "a": "#8f805e",
+    "b": "#35415c",
+    "id": 46
+  },
+  {
+    "title": "The Jungle Book",
+    "year": 2016,
+    "gross": 966550600,
+    "genre": "Fantasy · Adventure",
+    "a": "#74956a",
+    "b": "#2c483e",
+    "id": 47
+  },
+  {
+    "title": "Jumanji: Welcome to the Jungle",
+    "year": 2017,
+    "gross": 962542945,
+    "genre": "Adventure · Comedy",
+    "a": "#7a8d58",
+    "b": "#37432e",
+    "id": 48
+  },
+  {
+    "title": "The Hobbit: The Desolation of Smaug",
+    "year": 2013,
+    "gross": 959079095,
+    "genre": "Fantasy · Adventure",
+    "a": "#987c55",
+    "b": "#3e302d",
+    "id": 49
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "year": 2022,
+    "gross": 955775804,
+    "genre": "Action · Fantasy",
+    "a": "#9a5c67",
+    "b": "#332c52",
+    "id": 50
+  },
+  {
+    "title": "The Hobbit: The Battle of the Five Armies",
+    "year": 2014,
+    "gross": 940323039,
+    "genre": "Fantasy · Adventure",
+    "a": "#8e7559",
+    "b": "#343d4b",
+    "id": 51
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "gross": 940335536,
+    "genre": "Animation · Adventure",
+    "a": "#499fb3",
+    "b": "#1b5178",
+    "id": 52
+  },
+  {
+    "title": "Bohemian Rhapsody",
+    "year": 2018,
+    "gross": 910809311,
+    "genre": "Drama · Music",
+    "a": "#986b94",
+    "b": "#272a4d",
+    "id": 53
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "gross": 936689735,
+    "genre": "Fantasy · Adventure",
+    "a": "#8b805e",
+    "b": "#313a30",
+    "id": 54
+  },
+  {
+    "title": "The Secret Life of Pets",
+    "year": 2016,
+    "gross": 885302500,
+    "genre": "Animation · Comedy",
+    "a": "#bd9c63",
+    "b": "#546b7d",
+    "id": 55
+  },
+  {
+    "title": "The Batman",
+    "year": 2022,
+    "gross": 772245583,
+    "genre": "Action · Crime",
+    "a": "#a64c46",
+    "b": "#1c2432",
+    "id": 56
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "gross": 714444358,
+    "genre": "Sci-fi · Adventure",
+    "a": "#b99c75",
+    "b": "#3f3b47",
+    "id": 57
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "gross": 681070000,
+    "genre": "Sci-fi · Drama",
+    "a": "#839bb2",
+    "b": "#243549",
+    "id": 58
+  },
+  {
+    "title": "The Hunger Games",
+    "year": 2012,
+    "gross": 695220619,
+    "genre": "Action · Adventure",
+    "a": "#ac7a53",
+    "b": "#40352e",
+    "id": 59
+  },
+  {
+    "title": "Gravity",
+    "year": 2013,
+    "gross": 723192705,
+    "genre": "Sci-fi · Thriller",
+    "a": "#6b8ea5",
+    "b": "#1a2c42",
+    "id": 60
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "gross": 471227161,
+    "genre": "Romance · Musical",
+    "a": "#ac6689",
+    "b": "#313e75",
+    "id": 61
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "gross": 467222728,
+    "genre": "Sci-fi · Action",
+    "a": "#508c6c",
+    "b": "#172d28",
+    "id": 62
+  },
+  {
+    "title": "John Wick: Chapter 4",
+    "year": 2023,
+    "gross": 440146694,
+    "genre": "Action · Thriller",
+    "a": "#7a7b95",
+    "b": "#28273f",
+    "id": 63
+  },
+  {
+    "title": "The Greatest Showman",
+    "year": 2017,
+    "gross": 435000000,
+    "genre": "Drama · Musical",
+    "a": "#ad6f66",
+    "b": "#43304c",
+    "id": 64
+  },
+  {
+    "title": "Knives Out",
+    "year": 2019,
+    "gross": 312897920,
+    "genre": "Mystery · Comedy",
+    "a": "#ad8a65",
+    "b": "#34404c",
+    "id": 65
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "gross": 255407969,
+    "genre": "Horror · Mystery",
+    "a": "#7b8292",
+    "b": "#232737",
+    "id": 66
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "gross": 143400000,
+    "genre": "Sci-fi · Comedy",
+    "a": "#b58b65",
+    "b": "#303a5e",
+    "id": 67
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "gross": 172900000,
+    "genre": "Comedy · Drama",
+    "a": "#bb7f9b",
+    "b": "#56405a",
+    "id": 68
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "gross": 48982389,
+    "genre": "Drama · Music",
+    "a": "#a77b52",
+    "b": "#2b292d",
+    "id": 69
+  }
+]

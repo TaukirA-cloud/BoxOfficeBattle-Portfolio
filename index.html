@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0e14" />
+    <meta
+      name="description"
+      content="Your movie knowledge. The ultimate box office showdown. Play daily challenges, chase streaks, and climb the BoxOffice Battle leaderboard."
+    />
+    <title>BoxOffice Battle — Every blockbuster has a number.</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="google-adsense-account" content="ca-pub-5233222257140990" />
+    <script nonce="__CSP_NONCE__" type="module" src="app.js"></script>
+  </head>
+  <body class="play-view playing">
+    <a class="skip" href="#main">Skip to content</a>
+    <aside class="sidebar">
+      <a href="#play" class="brand" aria-label="BoxOffice Battle home"
+        ><span class="brand-icon">B<span>↗</span></span
+        ><span>BOXOFFICE<br /><b>BATTLE</b></span></a
+      >
+      <div class="sidebar-label">THE SCREENING ROOM</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#play" data-page="play" class="active"
+          ><span aria-hidden="true">▷</span> Play <i>01</i></a
+        >
+        <a href="#leaderboard" data-page="leaderboard"
+          ><span aria-hidden="true">♛</span> Leaderboard <i>02</i></a
+        >
+        <a href="#profile" data-page="profile"
+          ><span aria-hidden="true">◎</span> My studio <i>03</i></a
+        >
+      </nav>
+      <div class="sidebar-feature">
+        <span class="tag">A NEW CHALLENGE. DAILY.</span>
+        <h3>Your next<br />standing ovation.</h3>
+        <p>10 matchups. One shot.<br />A fresh slate every day.</p>
+        <button class="text-button" id="sidebarDaily">
+          Play the daily <span>↗</span>
+        </button>
+      </div>
+      <div class="sidebar-bottom">
+        <button id="howBtn" class="utility">ⓘ <span>How to play</span></button
+        ><button id="settingsBtn" class="utility">
+          ⚙ <span>Settings & privacy</span></button
+        ><span class="edition"
+          >INDEPENDENT CINEMA. BIG ENERGY.<br />VOL. 02 / EST. 2026</span
+        >
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb">
+          THE ARCADE <span>/</span> <strong id="pageLabel">PLAY</strong>
+        </div>
+        <div class="top-actions">
+          <span class="connection" id="connection"><i></i> Connecting</span
+          ><button
+            class="sound-toggle"
+            id="soundBtn"
+            aria-label="Enable sound"
+            aria-pressed="false"
+          >
+            ♪ <span id="soundLabel">Sound off</span></button
+          ><button class="player-button" id="accountBtn">
+            <span class="avatar" id="headerAvatar">G</span
+            ><span
+              ><span id="headerName">Guest player</span
+              ><small id="headerTitle" class="header-title">Movie newcomer</small></span
+            ><span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <section id="playPage" class="page">
+          <div class="play-hud">
+            <a href="#play" class="play-brand" aria-label="BoxOffice Battle"
+              >BOXOFFICE<span>BATTLE</span></a
+            >
+            <div class="play-tools">
+              <a href="/guides" class="play-help reading-link" aria-label="Movie guides"
+                >Guides</a
+              >
+              <button
+                id="playSettingsBtn"
+                class="play-help"
+                aria-label="Settings and help"
+              >
+                ?</button
+              ><button id="endRunBtn" class="end-run">End run</button>
+            </div>
+          </div>
+          <div class="page-heading">
+            <div>
+              <div class="eyebrow"><span></span> THE ULTIMATE MOVIE SHOWDOWN</div>
+              <h1>Big movies.<br /><em>Bigger instincts.</em></h1>
+              <p>Two films. One question. Which one ruled the box office?</p>
+            </div>
+            <div class="heading-stamp" aria-hidden="true">
+              <span>TRUST YOUR</span><b>GUT.</b><span>NOT THE HYPE.</span>
+            </div>
+          </div>
+          <div class="scoreboard" aria-label="Game statistics">
+            <div>
+              <small id="scoreLabel">CURRENT STREAK</small><strong id="score">0</strong>
+            </div>
+            <div><small>PERSONAL BEST</small><strong id="best">0</strong></div>
+            <div><small>ROUND</small><strong id="round">—</strong></div>
+            <div><small>LIFETIME ACCURACY</small><strong id="accuracy">—</strong></div>
+            <div class="timer-stat">
+              <small id="timerLabel">YOUR LEVEL</small><strong id="timer">01</strong>
+            </div>
+          </div>
+          <div id="gameLoading" class="loading-state">
+            <span class="loader"></span>
+            <h2>Setting the stage.</h2>
+            <p>Connecting to your screening room…</p>
+            <button class="primary hidden" id="retryBtn">Try connecting again</button>
+          </div>
+          <div id="gameArea" class="hidden">
+            <div class="arena" aria-label="Movie comparison">
+              <article class="movie-card" id="leftCard">
+                <div class="poster" id="leftPoster">
+                  <div class="poster-grain"></div>
+                  <span class="poster-kicker">A BOXOFFICE BATTLE SELECTION</span>
+                  <div class="poster-art" aria-hidden="true">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="poster-title" id="leftPosterTitle"></div>
+                  <div class="poster-foot">
+                    <span id="leftPosterYear"></span><span>WORLDWIDE / THEATRICAL</span>
+                  </div>
+                </div>
+                <div class="movie-details">
+                  <div class="movie-meta" id="leftMeta"></div>
+                  <h2 id="leftTitle"></h2>
+                  <div class="movie-label">WORLDWIDE BOX OFFICE</div>
+                  <div class="money" id="leftMoney"></div>
+                  <div class="baseline-label"><span></span> YOUR BENCHMARK</div>
+                </div>
+              </article>
+              <div class="vs" aria-hidden="true">VS</div>
+              <article class="movie-card challenger" id="rightCard">
+                <div class="poster" id="rightPoster">
+                  <div class="poster-grain"></div>
+                  <span class="poster-kicker">A BOXOFFICE BATTLE SELECTION</span>
+                  <div class="poster-art" aria-hidden="true">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="poster-title" id="rightPosterTitle"></div>
+                  <div class="poster-foot">
+                    <span id="rightPosterYear"></span><span>WORLDWIDE / THEATRICAL</span>
+                  </div>
+                </div>
+                <div class="movie-details">
+                  <div class="movie-meta" id="rightMeta"></div>
+                  <h2 id="rightTitle"></h2>
+                  <div class="movie-label" id="rightQuestion">
+                    DID IT MAKE HIGHER OR LOWER?
+                  </div>
+                  <div class="money mystery" id="rightMoney">$ — — —</div>
+                  <div class="guess-controls" id="guessControls">
+                    <button class="guess higher" id="higherBtn">
+                      <span>↑</span><span>Higher<small>MORE THAN THE LEFT</small></span
+                      ><kbd>↑</kbd></button
+                    ><button class="guess lower" id="lowerBtn">
+                      <span>↓</span><span>Lower<small>LESS THAN THE LEFT</small></span
+                      ><kbd>↓</kbd>
+                    </button>
+                  </div>
+                  <div id="result" class="result hidden" role="status"></div>
+                  <button class="next hidden" id="nextBtn">
+                    Next matchup <span>→</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="round-strip">
+              <span id="roundHint">FOLLOW THE MONEY. TRUST YOUR INSTINCTS.</span
+              ><span class="keyboard-hint"
+                ><kbd>↑</kbd> Higher <kbd>↓</kbd> Lower <kbd>↵</kbd> Next</span
+              >
+            </div>
+            <section
+              id="summary"
+              class="summary hidden"
+              tabindex="-1"
+              aria-labelledby="summaryTitle"
+            >
+              <div>
+                <div class="eyebrow">THAT’S A WRAP</div>
+                <div id="finalScore" class="final-score" aria-label="Final score">0</div>
+                <h2 id="summaryTitle">A run worth watching.</h2>
+                <p id="summaryText"></p>
+                <p id="finalReveal" class="final-reveal"></p>
+                <p id="runRewards" class="run-rewards" role="status"></p>
+                <div id="answerGrid" class="answer-grid" aria-label="Round results"></div>
+              </div>
+              <div class="summary-actions">
+                <button id="shareBtn" class="secondary">Share your result ↗</button
+                ><button id="playAgainBtn" class="primary">Run it back ↻</button>
+              </div>
+            </section>
+            <section
+              id="postGame"
+              class="post-game hidden"
+              aria-label="Choose your next game"
+            >
+              <h2>One more showdown?</h2>
+              <p id="catalogStatus" class="muted" role="status"></p>
+              <section
+                id="tmdbCredits"
+                class="tmdb-credits hidden"
+                aria-label="Movie data and poster credits"
+              >
+                <a
+                  href="https://www.themoviedb.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+                    alt="TMDB"
+                    width="96"
+                    height="16"
+                    loading="lazy"
+                /></a>
+                <p>
+                  This product uses the TMDB API but is not endorsed or certified by TMDB.
+                </p>
+              </section>
+              <div class="mode-grid" aria-label="Game modes">
+                <button
+                  class="mode-card selected"
+                  data-mode="classic"
+                  aria-pressed="true"
+                >
+                  <span class="mode-top"
+                    ><span>01 / THE ORIGINAL</span><span>↗</span></span
+                  ><strong>Endless streak</strong
+                  ><small>One wrong guess. Curtain call.</small
+                  ><span class="mode-bottom">CLASSIC <span>∞</span></span>
+                </button>
+                <button class="mode-card" data-mode="daily" aria-pressed="false">
+                  <span class="mode-top"
+                    ><span>02 / EVERY DAY</span><span class="new-tag">DAILY</span></span
+                  ><strong>The daily ten</strong
+                  ><small>The same 10 matchups for everyone.</small
+                  ><span class="mode-bottom">DAILY CHALLENGE <span>◷</span></span>
+                </button>
+                <button class="mode-card" data-mode="rush" aria-pressed="false">
+                  <span class="mode-top"
+                    ><span>03 / NO HESITATION</span><span>↗</span></span
+                  ><strong>Beat the clock</strong
+                  ><small>12 seconds. Think blockbuster fast.</small
+                  ><span class="mode-bottom">RUSH <span>ϟ</span></span>
+                </button>
+                <button class="mode-card" data-mode="practice" aria-pressed="false">
+                  <span class="mode-top"
+                    ><span>04 / FIND YOUR EDGE</span><span>↗</span></span
+                  ><strong>Director’s cut</strong
+                  ><small>No pressure. Explore your genre.</small
+                  ><span class="mode-bottom">PRACTICE <span>✳</span></span>
+                </button>
+              </div>
+              <div class="game-toolbar">
+                <div class="section-label">
+                  <i></i><span id="modeLabel">CLASSIC / ENDLESS STREAK</span
+                  ><span class="unranked" id="rankLabel">GUEST RUN</span>
+                </div>
+                <div class="toolbar-actions">
+                  <label id="genreWrap"
+                    >Movies in your next run
+                    <select id="genreSelect">
+                      <option>All movies</option>
+                    </select></label
+                  ><button class="text-button" id="restartBtn">↻ New run</button>
+                </div>
+              </div>
+              <div class="below-grid">
+                <section class="progress-card">
+                  <div class="section-label">
+                    YOUR NEXT BIG THING <span id="levelLabel">LEVEL 01</span>
+                  </div>
+                  <h3 id="progressTitle">Every great streak starts at one.</h3>
+                  <p id="progressText">
+                    Correct guesses earn 25 XP. Finish a run for a 50 XP bonus.
+                  </p>
+                  <p id="nextReward"></p>
+                  <a href="#profile" class="text-button">View & equip studio rewards</a>
+                  <div class="progress-track"><div id="xpBar"></div></div>
+                  <div class="progress-caption">
+                    <span id="xpLabel">0 XP</span
+                    ><span id="nextLevelLabel">100 XP TO LEVEL 2</span>
+                  </div>
+                </section>
+                <section class="daily-card">
+                  <div>
+                    <div class="section-label">THE DAILY TEN <span>UTC</span></div>
+                    <h3>A little movie ritual.</h3>
+                    <p id="dailyStatus">
+                      One challenge. A new lineup every midnight UTC.
+                    </p>
+                  </div>
+                  <button
+                    id="dailyBtn"
+                    class="round-button"
+                    aria-label="Play the daily challenge"
+                  >
+                    ↗
+                  </button>
+                </section>
+              </div>
+            </section>
+          </div>
+          <p class="disclaimer">
+            Reported movie revenues in USD; historical snapshots, not live or
+            inflation-adjusted. Missing revenue is excluded. Ties count as incorrect. No
+            studio affiliation.
+          </p>
+        </section>
+        <section
+          id="leaderboardPage"
+          class="page hidden"
+          aria-labelledby="leaderboardTitle"
+        >
+          <div class="page-heading">
+            <div>
+              <div class="eyebrow">THE BIG LEAGUES</div>
+              <h1 id="leaderboardTitle">The box office<br /><em>belongs to you.</em></h1>
+              <p>Real runs. Server-validated guesses. A place in the credits.</p>
+            </div>
+          </div>
+          <div class="filter-row" id="boardTabs" aria-label="Leaderboard mode">
+            <button class="chip selected" data-board="classic" aria-pressed="true">
+              Classic</button
+            ><button class="chip" data-board="daily" aria-pressed="false">
+              Today’s daily</button
+            ><button class="chip" data-board="rush" aria-pressed="false">Rush</button
+            ><button class="text-button" id="refreshBoard">Refresh ↻</button>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h2 id="boardTitle">Classic leaderboard</h2>
+              <span class="tag">TOP 50</span>
+            </div>
+            <p class="muted" id="boardNote">
+              Each player’s best completed run. Create an account to appear.
+            </p>
+            <div id="boardContent" aria-live="polite"></div>
+          </div>
+        </section>
+        <section id="profilePage" class="page hidden" aria-labelledby="profileTitle">
+          <div class="page-heading">
+            <div>
+              <div class="eyebrow">YOUR DIRECTOR’S CHAIR</div>
+              <h1 id="profileTitle">Build a<br /><em>blockbuster legacy.</em></h1>
+              <p id="profileSubtitle">
+                Your stats, your milestones, your next big moment.
+              </p>
+            </div>
+            <button class="primary" id="profileAccountBtn">
+              Create your player account ↗
+            </button>
+          </div>
+          <div id="profileStats" class="profile-stats"></div>
+          <section class="panel reward-panel" aria-labelledby="rewardTitle">
+            <div class="panel-heading">
+              <h2 id="rewardTitle">Your studio rewards</h2>
+              <span id="equippedTitle" class="tag"></span>
+            </div>
+            <p>
+              Earn titles and color themes as you level up and reach milestones. Equip
+              your favorites. Rewards never change scoring.
+            </p>
+            <p id="rewardStatus" role="status"></p>
+            <div id="rewardCollection" class="reward-collection"></div>
+          </section>
+          <div class="section-heading">
+            <h2>The trophy shelf</h2>
+            <span id="achievementCount" class="muted"></span>
+          </div>
+          <div id="achievements" class="achievement-grid"></div>
+          <div class="panel history-panel">
+            <div class="panel-heading">
+              <h2>Recently in your studio</h2>
+              <button class="text-button" id="exportBtn">Export my data ↓</button>
+            </div>
+            <div id="history"></div>
+          </div>
+          <div class="account-actions" id="accountActions">
+            <button class="secondary" id="logoutBtn">Sign out</button
+            ><button class="text-button danger" id="deleteBtn">
+              Delete account & data
+            </button>
+          </div>
+        </section>
+        <footer>
+          <a href="#play">BOXOFFICE<span>BATTLE</span> <small>© 2026</small></a
+          ><span>MADE FOR THE LOVE OF MOVIES.</span
+          ><button class="text-button" id="footerSettings">Settings & help</button
+          ><button class="text-button" id="privacyBtn">Data & privacy</button>
+          <a href="/guides">Movie guides</a>
+          <a href="/methodology">Sources & corrections</a>
+          <a href="/about">About & contact</a>
+          <a href="/privacy">Privacy policy</a>
+        </footer>
+      </main>
+    </div>
+    <div id="toast" class="toast hidden" role="status"></div>
+    <dialog id="modal" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <button id="closeModal" class="icon-button" aria-label="Close dialog">×</button>
+      </div>
+      <div id="modalBody"></div>
+    </dialog>
+    <noscript
+      ><div class="noscript">
+        <h1>BoxOffice Battle: the higher-or-lower movie game</h1>
+        <p>
+          Compare two films and predict which earned more at the worldwide box office. Try
+          a streak in Classic, ten matchups in Daily, timed guesses in Rush, or an
+          unranked Practice run.
+        </p>
+        <p>JavaScript is needed to play. Our guides work without it:</p>
+        <p>
+          <a href="/how-to-play">How to play</a> ·
+          <a href="/box-office-explained">Understanding box office</a> ·
+          <a href="/guides">All movie guides</a> ·
+          <a href="/methodology">Sources and limitations</a>
+        </p>
+      </div></noscript
+    >
+  </body>
+</html>
